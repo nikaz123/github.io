@@ -1,0 +1,176 @@
+@media screen and (min-width: 1024px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #21424a;
+  }
+  .list-query {
+    width: 1680px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #21424a;
+  }
+  .list-query {
+    width: 840px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #21424a;
+  }
+  .list-query {
+    width: 420px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  background-color: #21424a;
+}
+.div-format {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-format form input {
+  width: 500px;
+  height: 50px;
+  font-size: 30px;
+  background-color: lightgray;
+  border: 2px solid #16937a;
+}
+.div-format form button {
+  width: 150px;
+  height: 56px;
+  padding: 0;
+  color: #1a1a1d;
+  background-color: #75c4b4;
+  font-size: 30px;
+  border: 2px solid #16937a;
+  cursor: pointer;
+}
+.div-format form button:hover {
+  background-color: #ff2c41;
+  color: white;
+}
+.list-query {
+  height: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+.list-query .container-list {
+  width: 3000%;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  transform: translate(calc(var(--i, 0) / var(--n) * -100%));
+}
+.list-query .container-list .clipElement {
+  display: inline-block;
+  vertical-align: top;
+  width: 350px;
+  height: 550px;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  border: solid 1px green;
+  background-color: #f0fff0;
+  position: relative;
+}
+.list-query .container-list .clipElement a {
+  position: absolute;
+  top: 50px;
+  text-align: justify;
+  font-size: 20px;
+  color: red;
+  padding: 10px 10px;
+  text-decoration: none;
+  background-color: rgba(117, 196, 180, 0.5);
+}
+.list-query .container-list .clipElement a:hover {
+  color: #1a1a1d;
+}
+.list-query .container-list .clipElement span {
+  display: block;
+  text-align: justify;
+  font-size: 20px;
+  color: #1a1a1d;
+  padding: 10px 10px;
+}
+.list-query .container-list .clipElement img {
+  width: 350px;
+  height: 200px;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  border-radius: 4px;
+  padding: 1px 2px 4px 2px;
+  height: 150px;
+}
+.pagination a,
+.pagination i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 22px;
+  color: #21424a;
+  text-align: center;
+  font-size: 10px;
+  padding: 3px 0 2px 0;
+  user-select: none;
+}
+.pagination a {
+  margin: 0 2px 0 2px;
+  border-radius: 4px;
+  border: 1px solid #E3E3E3;
+  cursor: pointer;
+  box-shadow: inset 0 1px 0 0 #FFF, 0 1px 2px #666;
+  text-shadow: 0 1px 1px #FFF;
+  background-color: #E6E6E6;
+}
+.pagination i {
+  margin: 0 3px 0 3px;
+}
+.pagination a.current {
+  border: 1px solid #E9E9E9;
+  box-shadow: 0 1px 1px #999;
+  background-color: #1e9b88;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZVJvb3QiOiIifQ==*/
