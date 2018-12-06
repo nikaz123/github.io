@@ -1,0 +1,671 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-id="1">
+            <h2 class="league">CSS3. SEMANTICS. POSITION. FLOATS</h2>
+            <p>by Kachubeyeva Veranika</p>
+        </section>
+
+        <section data-id="2">
+
+            <section data-id="2.1">
+                <h2 class="league">CSS3</h2>
+            </section>
+
+            <section data-id="2.2">
+                <p> CSS3 is the latest evolution of the Cascading Style Sheets language
+                    and aims at extending CSS2.1.</p>
+                <p>It brings a lot of long-awaited novelties.</p>
+
+            </section>
+
+            <section data-id="2.3">
+
+                <h4> CSS Animations and Transitions </h4>
+               <p> <img src="images/chrome-capture.gif" width="300" height="300" class="round"> </p>
+                <p><a href="https://www.w3.org/TR/selectors/#selectors">Link to code</a> </p>
+
+                <aside class="notes">
+                    CSS animations are finally available in all major browsers, even in IE (since version 10).
+                    There are two ways to create CSS animations.
+                    The first is very easy, it is done through animating the changes of CSS properties with the
+                    transition declaration.
+                    The second way for defining animations is a bit more complicated - it involves the description of
+                    specific moments of the animation with the code>@keyframe rule.
+                    This allows you to have repeating animations that don't depend on user actions or JavaScript to get
+                    triggered.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.4">
+                <h4> Gradients </h4>
+                <p> <img src="images/gradient.jpg" width="600" height="200" class="round"> </p>
+                <p> <img src="images/codeGradient.jpg" width="600" height="200" class="round"> </p>
+
+                <aside class="notes">
+                    Gradients give web designers the power to create smooth transitions between colors without having to
+                    resort to images.
+                    CSS gradients also look great on retina displays, because they are generated on the fly.
+                    They can be linear or radial, and can be set to repeat.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.5">
+                <h4> Border Images </h4>
+                <p> <img src="images/border.jpg" width="600" height="200" class="round"> </p>
+                <p> <img src="images/codeBorder.jpg" width="600" height="200" class="round"> </p>
+
+
+                <aside class="notes">
+                    The border-image property allows you to display custom designed borders around elements.
+                    The borders are contained in a single image (sprite), with each region of that image corresponding
+                    to a different part of the border.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.6">
+                <h4> Calculating Values With calc()</h4>
+
+                <p> <img src="images/calc.jpg" width="600" height="200" class="round"> </p>
+                <p> <img src="images/codeCalc.jpg" width="300" height="200" class="round"> </p>
+
+                <aside class="notes">
+                    Another new and awesome CSS feature is the calc() function.
+                    It allows you to do simple arithmetic calculations in CSS. You can use it anywhere a length or a
+                    size is required.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.7">
+                <h4> Advanced Selectors </h4>
+                <p>E:empty </p>
+                <p> E:first-child</p>
+                <p> E:last-child </p>
+                <p> E:nth-of-type(n) </p>
+                <p> E:active </p>
+                <p> E:hover </p>
+                <p> and many other </p>
+
+                <a href="https://www.w3.org/TR/selectors/#selectors">Advanced Selectors</a>
+                <aside class="notes">
+                    CSS 2.1 and CSS 3 introduced a number of powerful selectors that can make your layouts cleaner, and
+                    your stylesheets more awesome.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.8">
+                <h4> Webfonts </h4>
+                <p> <img src="images/fonts.jpg" width="600" height="200" class="round"> </p>
+                <p> <img src="images/codeFonts.jpg" width="600" height="200" class="round"> </p>
+
+                <aside class="notes">
+                    Today we have services like Google Fonts and typekit,
+                    which let you embed beautiful fonts by simply including a stylesheet in your page.
+                    There are even icon fonts like fontawesome, which contain pretty vector icons,
+                    instead of letters or numbers. This was all made possible by the code>@font-face rule,
+                    which lets you define the name, characteristics and source files for fonts,
+                    which you can later refer in your font/font-family declarations.
+                </aside>
+
+            </section>
+
+            <section data-id="2.9">
+                <h4> Box Sizing </h4>
+                <p> <img src="images/box.jpg" width="600" height="100" class="round"> </p>
+                <p><a href="https://www.w3.org/TR/selectors/#selectors">Link to code</a> </p>
+
+                <aside class="notes">
+                    The box-sizing CSS property defines how the user agent should calculate the total width and height
+                    of an element.
+                    You can set it to border-box, which makes elements behave exactly the way you expect.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.10">
+                <h4> CSS Columns </h4>
+                <p> <img src="images/columns.jpg" width="600" height="200" class="round"> </p>
+                <p> <img src="images/codeColumns.jpg" width="600" height="200" class="round"> </p>
+
+                <aside class="notes">
+                    Column-based layouts were notoriously difficult to pull off in CSS.
+                    It usually involved using JavaScript or server-side processing that splits the content into
+                    different elements.
+                    Now there is a way around this by using the CSS columns rule.
+                </aside>
+
+            </section>
+
+            <section data-id="2.11">
+                <h4> Other Worthy Mentions </h4>
+                <p>border-radius</p>
+                <p>box-shadow</p>
+                <p>opacity</p>
+                <p>background-size</p>
+                <p>CSS 3D Transforms</p>
+
+
+                <aside class="notes">
+                    There are other notable features that are worth mentioning.
+                </aside>
+
+            </section>
+
+
+            <section data-id="2.12">
+                <p>Taxonomy and status of CSS3 modules.</p>
+                <img src="images/css3circle.png" width="500" height="500" class="round">
+                <ul style="list-style-type: none;">
+                    <li style="margin-right: 25px;"><span
+                            style="color:#83af40; font-size:25px;">●  Recommendation</span></li>
+                    <li style="margin-right: 25px;"><span style="color:#8a8a3c; font-size:25px;">●  Candidate Recommendation</span>
+                    </li>
+                    <li style="margin-right: 25px;"><span style="color:#c3642f; font-size:25px;">●  Last Call</span>
+                    </li>
+                    <li style="margin-right: 25px;"><span
+                            style="color:#ed1e24; font-size:25px;">●  Working Draft.</span></li>
+                </ul>
+
+                <aside class="notes">
+                    CSS Level 2 needed 9 years to reach the Recommendation status.
+                    This was due to the fact that a few secondary features held back the whole specification.
+                    To speed up the standardization of non-problematic features, the CSS Working Group of the W3C
+                    divided CSS in smaller components called modules. Each of these modules is now an independent part
+                    of the language and moves towards standardization at its own pace.
+                    Due to the modularization, different modules have different stability and statuses.
+
+
+                </aside>
+
+
+            </section>
+
+            <section data-id="2.13">
+                <p>Useful links</p>
+                <a href="https://tutorialzine.com/2013/10/12-awesome-css3-features-you-can-finally-use">CSS3</a> </br>
+
+            </section>
+
+        </section>
+
+        <section data-id="3">
+            <section data-id="3.1">
+                <h2 class="league">SEMANTICS</h2>
+
+                <ul class="apps">
+                    <li class="fragment">
+                        <p>Semantics is the study of the meanings of words and phrases in a language.</p>
+                    </li>
+                    <li class="fragment">
+                        <p>Semantic elements = elements with a meaning.</p>
+                    </li>
+                </ul>
+
+            </section>
+
+            <section data-id="3.2">
+                <img src="images/SemanticClassic.png" width="700" height="500" class="round">
+                <aside class="notes">
+                    Classic and New Semantic Elements in HTML5 are on the slide.
+                    HTML5 semantic elements are supported in all modern browsers.
+                    In addition, you can "teach" older browsers how to handle "unknown elements".
+                    Read about it in HTML5 Browser Support.
+                    Many web sites contain HTML code like: '
+                    <div id="navigation">
+                        <div class="header">
+                            <div id="footer">'
+                                to indicate navigation, header, and footer.
+
+
+                </aside>
+
+            </section>
+
+
+            <section data-id="3.3">
+                <h3> New Semantic Elements in HTML5 </h3>
+                <ul class="apps" style="margin-right: 150px">
+                    <li class="fragment">
+                        <p> article </p>
+                    </li>
+                    <li class="fragment">
+                        <p> aside </p>
+                    </li>
+                    <li class="fragment">
+                        <p> details </p>
+                    </li>
+                    <li class="fragment">
+                        <p> figcaption </p>
+                    </li>
+                    <li class="fragment">
+                        <p> figure </p>
+                    </li>
+                    <li class="fragment">
+                        <p> footer </p>
+                    </li>
+                    <li class="fragment">
+                        <p> header </p>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="fragment">
+                        <p> main </p>
+                    </li>
+                    <li class="fragment">
+                        <p> mark </p>
+                    </li>
+                    <li class="fragment">
+                        <p> nav </p>
+                    </li>
+                    <li class="fragment">
+                        <p> section </p>
+                    </li>
+                    <li class="fragment">
+                        <p> summary </p>
+                    </li>
+                    <li class="fragment">
+                        <p> time </p>
+                    </li>
+
+                </ul>
+
+
+            </section>
+            <section data-id="3.4">
+                <p>HTML5 offers new semantic elements to define different parts of a web page:</p>
+                <img src="images/html5elementssemantics.png" width="478" height="500" class="round">
+
+                <aside class="notes">
+                    HTML5 offers new semantic elements to define different parts of a web page.
+
+                </aside>
+
+
+            </section>
+            <section data-id="3.5">
+
+                <table>
+                    <caption>Below is an alphabetical list of the new semantic elements in HTML5.</caption>
+                    <tr>
+                        <th>TAG</th>
+                        <th>DESCRIPTION</th>
+                    </tr>
+                    <tr>
+                        <td>article</td>
+                        <td>Defines an article</td>
+                    </tr>
+                    <tr>
+                        <td>aside</td>
+                        <td>Defines content aside from the page content</td>
+                    </tr>
+                    <tr>
+                        <td>details</td>
+                        <td>Defines additional details that the user can view or hide</td>
+                    </tr>
+                    <tr>
+                        <td>figcaption</td>
+                        <td>Defines a caption for a figure element</td>
+                    </tr>
+                    <tr>
+                        <td>figure</td>
+                        <td>Specifies self-contained content, like illustrations, diagrams, photos, code listings,
+                            etc.
+                        </td>
+                    </tr>
+
+                </table>
+
+
+            </section>
+            <section data-id="3.6">
+
+                <table>
+                    <tr>
+                        <td>footer</td>
+                        <td>Defines a footer for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td>header</td>
+                        <td>Specifies a header for a document or section</td>
+                    </tr>
+                    <tr>
+                        <td>main</td>
+                        <td>Specifies the main content of a document</td>
+                    </tr>
+                    <tr>
+                        <td>mark</td>
+                        <td>Defines marked/highlighted text</td>
+                    </tr>
+                    <tr>
+                        <td>nav</td>
+                        <td>Defines navigation links</td>
+                    </tr>
+                    <tr>
+                        <td>section</td>
+                        <td>Defines a section in a document</td>
+                    </tr>
+                    <tr>
+                        <td>summary</td>
+                        <td>Defines a visible heading for a details element</td>
+                    </tr>
+                    <tr>
+                        <td>time</td>
+                        <td>Defines a date/time</td>
+                    </tr>
+                </table>
+
+
+                <aside class="notes">
+                    On these slides you can find description of tags.
+                </aside>
+
+            </section>
+            <section data-id="3.7">
+                <p>Useful links</p>
+                <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Tags</a> </br>
+                <a href="https://www.w3schools.com/tags/default.asp">HTML All Tags Ordered Alphabetically</a>
+            </section>
+        </section>
+
+
+        <section data-id="4">
+            <section data-id="4.1">
+                <h2 class="league">POSITION</h2>
+            </section>
+            <section data-id="4.2">
+                <h3>The position Property</h3>
+                <p>The position property specifies the type of positioning method used for an element. There are four
+                    different position values:</p>
+
+                <ul class="apps">
+                    <li class="fragment">
+                        <p> static </p>
+                    </li>
+                    <li class="fragment">
+                        <p> relative </p>
+                    </li>
+                    <li class="fragment">
+                        <p> fixed </p>
+                    </li>
+                    <li class="fragment">
+                        <p> absolute </p>
+                    </li>
+
+                </ul>
+            </section>
+            <section data-id="4.3">
+                <img src="images/position.jpg" width="700" height="500" class="round">
+                <aside class="notes">
+                    On the slide you can see all position values. Let’s discus them one by one.
+                </aside>
+
+
+            </section>
+
+            <section data-id="4.4">
+                <h4>Static</h4>
+
+                <img src="images/static.png" width="700" height="500" class="round">
+
+                <aside class="notes">
+                    Static is the default value.
+                    An element with position: static; is not positioned in any special way.
+                    A static element is said to be not positioned and an element with its position set to anything else
+                    is said to be positioned.
+                </aside>
+
+
+            </section>
+            <section data-id="4.5">
+                <h4>relative and absolute</h4>
+                <img src="images/relPLUSabsolute.jpg" width="900" height="500" class="round">
+
+
+                <aside class="notes">
+                    Relative behaves the same as static unless you add some extra properties.
+                    Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it
+                    to be adjusted away from its normal position.
+                    Other content will not be adjusted to fit into any gap left by the element.
+
+                    Absolute element is removed from the normal document flow, and no space is created for the element
+                    in the page layout.
+                    It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed
+                    relative to the initial containing block.
+                    Its final position is determined by the values of top, right, bottom, and left.
+                </aside>
+
+            </section>
+
+
+            <section data-id="4.6">
+                <h4>fixed</h4>
+
+                <img src="images/positionfixed.jpg" width="900" height="500" class="round">
+                <aside class="notes">
+                    A fixed element is positioned relative to the viewport, which means it always stays in the same
+                    place even if the page is scrolled. As with relative, the top, right, bottom, and left properties
+                    are used.
+                </aside>
+
+
+            </section>
+
+            <section data-id="4.7">
+                <h4>relatively absolute</h4>
+
+                <img src="images/relativeabsolute.png" width="700" height="500" class="round">
+
+                <aside class="notes">
+                    Absolute is the trickiest position value. Absolute behaves like fixed except relative to the nearest
+                    positioned ancestor instead of relative to the viewport.
+                    If an absolutely-positioned element has no positioned ancestors, it uses the document body, and
+                    still moves along with page scrolling.
+                    Remember, a "positioned" element is one whose position is anything except static.
+                </aside>
+
+
+            </section>
+            <section data-id="4.8">
+                <p>Useful links</p>
+                <a href="http://learnlayout.com/position.html">Position</a> </br>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Position at MDN</a>
+            </section>
+
+        </section>
+
+
+        <section data-id="5">
+            <section data-id="5.1">
+                <h2 class="league">FLOATS</h2>
+            </section>
+
+            <section data-id="5.2">
+                <p>float: left | right | none | inline-start | inline-end</p>
+
+                <aside class="notes">
+                    The float CSS property places an element on the left or right side of its container,
+                    allowing text and inline elements to wrap around it.
+                    The element is removed from the normal flow of the page, though still remaining
+                    a part of the flow.
+                </aside>
+
+            </section>
+
+
+            <section data-id="5.3">
+
+                <img src="images/floatEx.png" width="700" height="550" class="round">
+
+
+                <aside class="notes">
+
+                    The float property can have one of the following values:
+
+                    left - The element floats to the left of its container
+
+                    right- The element floats to the right of its container
+
+                    none - The element does not float (will be displayed just where it occurs in the text). This
+                    is default
+
+                    inherit - The element inherits the float value of its parent
+
+                </aside>
+
+
+
+            </section>
+
+
+            <section data-id="5.4">
+                <p>Examples</p>
+
+                <img src="images/floats.png" width="900" height="550" class="round">
+                <aside class="notes">
+                    In its simplest use, the float property can be used to wrap text around images.
+                </aside>
+
+            </section>
+
+            <section data-id="5.5">
+                <h4>The clear Property</h4>
+                <img src="images/clear.jpg" width="900" height="550" class="round">
+
+
+                <aside class="notes">
+                    The clear property can have one of the following values: none, left, right, both, inherit.
+
+                    The most common way to use the clear property is after you have used a float property on an element.
+                    When clearing floats, you should match the clear to the float: If an element is floated to the left,
+                    then you should clear to the left.
+                    Your floated element will continue to float, but the cleared element will appear below it on the web
+                    page.
+                </aside>
+
+            </section>
+
+
+
+            <section data-id="5.6">
+                <p>Examples</p>
+                <ul class="apps">
+                    <li class="fragment">
+                        <p>Without clearfix</p>
+                        <img src="images/withoutclearfix.jpg" width="550" height="150" class="round">
+                    </li>
+                    <li class="fragment">
+                        <p>With clearfix</p>
+                        <img src="images/withClearfix.jpg" width="550" height="150" class="round">
+                    </li>
+                </ul>
+
+                <aside class="notes">
+                    If an element is taller than the element containing it, and it is floated, it will "overflow"
+                    outside of its container
+                    .clearfix {
+                    overflow: auto;
+                    }
+                    The overflow: auto clearfix works well as long as you are able to keep control of your margins and
+                    padding
+                    (else you might see scrollbars).
+                    The new, modern clearfix hack however, is safer to use, and the following code is used for most
+                    webpages.
+                </aside>
+
+            </section>
+
+            <section data-id="5.7">
+                <p>The clearfix Hack</p>
+                <ul class="apps">
+                    <li class="fragment">
+                        .clearfix {
+                        overflow: auto;
+                        }
+                    </li>
+                    <li class="fragment">
+                        .clearfix::after {
+                        content: "";
+                        clear: both;
+                        display: table;
+                        }
+                    </li>
+                </ul>
+
+            </section>
+
+
+            <section data-id="5.8">
+                <p>Useful links</p>
+                <p> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/float">Float at MDN</a> </p>
+                <p><a href="https://learn.javascript.ru/float">Float at learn.javascript </a></p>
+            </section>
+
+
+        </section>
+
+
+        <section data-id="6">
+            <h2 class="league">THANK YOU!</h2>
+
+
+        </section>
+
+
+    </div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>            // More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+    dependencies: [
+        {src: 'plugin/markdown/marked.js'},
+        {src: 'plugin/markdown/markdown.js'},
+        {src: 'plugin/notes/notes.js', async: true},
+        {
+            src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+            hljs.initHighlightingOnLoad();
+        }
+        }
+    ]
+});
+</script>
+</body>
+</html>
